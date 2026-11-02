@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Year Calendar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="toolbar">
+    <button type="button" id="prev-year" aria-label="Previous year">&#8249;</button>
+    <h1 id="year-title"></h1>
+    <button type="button" id="next-year" aria-label="Next year">&#8250;</button>
+  </header>
+
+  <main id="calendar" class="calendar"></main>
+
+  <footer class="footer">
+    <div id="category-picker" class="category-picker" role="group" aria-label="Category"></div>
+    <span>Selected days: <strong id="selected-count">0</strong> <span id="selected-year-count"></span>
+      <span id="category-counts" class="category-counts"></span></span>
+    <button type="button" id="clear-all">Clear all</button>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
